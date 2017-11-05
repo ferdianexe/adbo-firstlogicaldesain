@@ -19,7 +19,10 @@ public class Main extends SimpleApplication {
         Main app = new Main();
         app.start();
     }
-
+    /**
+     * inisilisasi game akan berpindah state
+     * untuk sekarang state langsung pindah ke main game ( game sudah dimulai)
+     */
     @Override
     public void simpleInitApp() {
         stateManager.attach(new MainGame(this));
